@@ -1,6 +1,16 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
+}
+
+a {
+    text-decoration: none;
 }
 
 h1 {
@@ -40,6 +50,66 @@ section {
     margin-top: 20px;
 }
 
+/*Header Area Start*/
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px 70px;
+    font-size: 16px;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+header>a:nth-child(1) {
+    color: white;
+    font-size: 30px;
+    font-family: 'Pacifico', cursive;
+    cursor: pointer;
+}
+
+.nav-area {
+    list-style: none;
+}
+
+.nav-area li {
+    display: inline-block;
+    padding: 0 15px;
+    text-transform: uppercase;
+}
+
+.nav-area li a {
+    transition: .3s;
+    color: white;
+    font-size: 18px;
+}
+
+.nav-area li a:hover {
+    color: #d22938;
+}
+
+.btn-area {
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: #d22938;
+    font-size: 16px;
+    letter-spacing: 2px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: white;
+}
+
+.btn-area:hover {
+    background-image: linear-gradient(45deg, #d22938, #a03d29);
+    transition: .3s;
+}
+
+/*Header Area End*/
 /*Top Section Start*/
 #top-section {
     margin-top: 80px;
@@ -60,6 +130,8 @@ section {
 /*About Section Start*/
 #about-section {
     background-image: url(images/shapes/7.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 50px 50px 0;
     display: flex;
 }
@@ -146,7 +218,7 @@ section {
 footer {
     background-color: black;
     color: white;
-    padding: 10px 0;
+    padding: 30px 0 30px;
     text-align: center;
 }
 
