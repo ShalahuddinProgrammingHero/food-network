@@ -32,7 +32,7 @@ p {
 
 section {
     align-items: center;
-    margin-bottom: 80px;
+    margin: 50px 0;
 }
 
 .half-width {
@@ -57,13 +57,8 @@ header {
     align-items: center;
     padding: 25px 70px;
     font-size: 16px;
-    overflow: hidden;
     background-color: #333;
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
-    z-index: 1;
 }
 
 header>a:nth-child(1) {
@@ -112,12 +107,12 @@ header>a:nth-child(1) {
 /*Header Area End*/
 /*Top Section Start*/
 #top-section {
-    margin-top: 80px;
+    margin-top: 5%;
     display: flex;
 }
 
 #top-section>div:nth-of-type(1) {
-    margin-left: 100px;
+    margin-left: 10%;
 }
 
 #top-section img {
@@ -192,8 +187,78 @@ header>a:nth-child(1) {
     display: inline-block;
 }
 
-
 /*Recipie Section End*/
+
+/*Item Section Start*/
+#item-section {
+    justify-content: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#item-section h1 {
+    margin-bottom: 10px;
+    color: rgb(119, 218, 119);
+}
+
+/*Item Section End*/
+/*Contact Section Start*/
+#contact-section {
+    background: #395961;
+    padding: 50px 0;
+    color: white;
+}
+
+form {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contact-section h1 {
+    color: white;
+}
+
+#contact-section input,
+#contact-section label {
+    display: block;
+    margin: 5px 0;
+}
+
+textarea {
+    display: block;
+    padding: 10px;
+}
+
+#contact-section input {
+    padding: 15px 40px;
+}
+
+
+#contact-section input[type="submit"],
+#contact-section input[type="reset"] {
+    display: inline;
+}
+
+#contact-section input[type="submit"] {
+    background-color: green;
+    color: white;
+}
+
+#contact-section input[type="reset"] {
+    background-color: rgba(255, 0, 0, 0.616);
+    color: white;
+}
+
+input#comment {
+    height: 300px;
+    width: 400px;
+    padding: 0;
+    margin: 0;
+}
+
+/*Contact Section End*/
 
 /*Followers Section Start*/
 #followers-section {
@@ -201,6 +266,7 @@ header>a:nth-child(1) {
     justify-content: center;
     width: 80%;
     margin: 0 auto 50px;
+    padding: 50px 0;
     box-shadow: 1px 1px 10px 1px black;
 }
 
